@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* You can define custom variables here if needed */
+}
+
+/* In Tailwind v4, we often style the body directly rather than using @apply 
+   to avoid the "unknown utility" error during the initial build phase */
+body {
+  background-color: rgb(248, 250, 252); /* This is slate-50 */
+  color: rgb(15, 23, 42);             /* This is slate-900 */
+}
+
+/* Custom CSS for your memory game */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
