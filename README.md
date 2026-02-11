@@ -26,17 +26,21 @@ A professional, modular Next.js application featuring a persistent authenticatio
 * **Session Guard:** Automatically redirects to the login screen if no active session is found.
 
 ### 🎮 Face Matching Game
-* **2x4 Grid:** A classic memory-testing layout.
-* **Score Tracking:** Counts moves made during the session.
-* **High Score System:** Persists the "Best Score" (fewest moves) specifically for the logged-in user.
+* **Face-Recognition Logic:** Uses a variety of expressive face emojis to improve focus.
+* **Level Progression:** 
+  - **Easy:** 12 cards / 4-column grid
+  - **Medium:** 16 cards / 4-column grid
+  - **Hard:** 20 cards / 5-column grid
+* **Dynamic Records:** Saves and displays the **Best Time** and **Best Moves** for every difficulty level.
+* **3D Interface:** Features custom-built indigo gradient cards with realistic flipping animations.
 
 ### 📅 Advanced Calendar
 * **Auto-Calculation:** Automatically determines the number of days in the current month and the correct starting weekday.
 * **Event Management:** Allows multiple events per day with specific "From-To" time slots.
-* **Validation Logic:** Prevents users from adding events to dates that have already passed.
+* **Validation Logic:** Prevents users from adding events to dates and time that has already passed.
 * **User-Specific Data:** Calendar events are keyed to the user's email so different accounts don't see each other's schedules.
-
----
+* **Conflict Detection:** Alerts users if an event overlaps with an existing booking.
+* **Persistence:** Auto-saves schedule data to `localStorage` based on user email.
 
 ## 🛠️ Tech Stack
 
